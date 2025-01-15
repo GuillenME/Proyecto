@@ -85,7 +85,6 @@ footer {
 @media (max-width: 480px) {
   nav {
       display: none;
-      
   }
 
   .breadcrumbs {
