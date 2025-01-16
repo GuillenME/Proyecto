@@ -14,10 +14,40 @@
     <div class="container">
         <nav>
             <ul>
-                <li><a href="prods/index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda Aurrera</a></li>
-                <li><a href="tienda_soriana.html">Tienda Soriana</a></li>
-                <li><a href="tienda_che.html">Tienda Chedraui</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="submenu">
+                    <a href="#">Integrantes</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Mariana</a></li>
+                        <li><a href="#">Froilan</a></li>
+                        <li><a href="#">Hugo</a></li>
+                        <li><a href="#">Alejandro</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#">Materia</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Base de datos</a></li>
+                        <li><a href="#">Matematicas</a></li>
+                        <li><a href="#">Español</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#">Juegos</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Ajedrez</a></li>
+                        <li><a href="#">Domino</a></li>
+                        <li><a href="#">Pokar</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#">Proyectos</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Taxis locales</a></li>
+                        <li><a href="#">Psicología</a></li>
+                        <li><a href="#">Escolar</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 
@@ -33,5 +63,15 @@
     <footer>
         <p>© 2025 Mi Aplicación. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.submenu > a').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+                e.preventDefault();
+            });
+        });
+    </script>
 </body>
 </html>
