@@ -43,10 +43,10 @@
                 <li class="submenu">
                     <a href="#">Proyectos</a>
                     <ul class="dropdown">
-                        <li><a href="#">Taxis locales</a></li>
-                        <li><a href="#">Psicología</a></li>
-                        <li><a href="#">Escolar</a></li>
-                    </ul>
+                        <li><a href="taxis_locales.html" id="taxis_locales">Taxis locales</a></li>
+                        <li><a href="psicologia.html" id="psicologia">Psicología</a></li>
+                        <li><a href="escolar.html" id="escolar">Escolar</a></li>
+                    </ul>                    
                 </li>
             </ul>
         </nav>
@@ -55,7 +55,7 @@
             <div class="breadcrumbs">
                 <a href="index.html">Inicio</a>
             </div>
-            <h2>Bienvenidos</h2>
+            <h2>Bienvenido a la Página de Inicio</h2>
             <p>Esta es la página principal de tu aplicación. Desde aquí puedes explorar diversas categorías como la tienda o productos electrónicos.</p>
         </main>
     </div>
@@ -72,6 +72,19 @@
                 e.preventDefault();
             });
         });
+
+        document.getElementById('taxis_locales').addEventListener('click', () => {
+            window.location.href = 'taxis_locales.html';
+        });
+        
+        document.getElementById('psicologia').addEventListener('click', () => {
+            window.location.href = 'psicologia.html';
+        });
+        
+        document.getElementById('escolar').addEventListener('click', () => {
+            window.location.href = 'escolar.html';
+        });
+        
     </script>
 </body>
 </html>
