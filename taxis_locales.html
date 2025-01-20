@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taxis Locales</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -11,34 +11,68 @@
         <h1>Mi Aplicación</h1>
     </header>
 
-    <div class="container">
+    <div class="container"> 
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li>Taxis Locales</li>
+                <li class="submenu">
+                    <a href="#">Integrantes</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Mariana</a></li>
+                        <li><a href="#">Froilan</a></li>
+                        <li><a href="#">Hugo</a></li>
+                        <li><a href="#">Alejandro</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#">Materia</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Base de datos</a></li>
+                        <li><a href="#">Matematicas</a></li>
+                        <li><a href="#">Español</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#">Juegos</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Ajedrez</a></li>
+                        <li><a href="#">Domino</a></li>
+                        <li><a href="#">Pokar</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="proyectos.html">Proyectos</a>
+                    <ul class="dropdown">
+                        <li><a href="taxis_locales.html">Taxis locales</a></li>
+                        <li><a href="psicologia.html">Psicología</a></li>
+                        <li><a href="escolar.html">Escolar</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 
         <main>
             <div class="breadcrumbs">
-                <a href="index.html">Inicio</a> > 
-                <a href="proyectos.html">Proyectos</a> > 
-                <span>Taxis Locales</span>
+                <a href="proyectos.html">proyectos</a> > <a href="taxis_locales.html">Taxis locales</a>
             </div>
-            <h2>Taxis Locales</h2>
-            <p>Bienvenido a la sección de Taxis Locales. Aquí puedes solicitar taxis y acceder a más opciones.</p>
-            <ul>
-                <li><a href="#">Solicitar Taxi</a></li>
-                <li><a href="#">Opciones Avanzadas</a></li>
-            </ul>
+            <h2>Taxis locales</h2>
+            <p>Esta es la página correspondiente a taxis locales: taxis locales</p>
+            <a href="desc_taxis_locales.html">Descripcion para taxis locales</a>
         </main>
     </div>
 
     <footer>
         <p>© 2025 Mi Aplicación. Todos los derechos reservados.</p>
     </footer>
-</body>
-<script src="js/breadcrumbs.js"></script>
 
+    <script>
+        document.querySelectorAll('.submenu > a').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
 </html>

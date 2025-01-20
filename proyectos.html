@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -15,25 +15,67 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li>Proyectos</li>
+                <li class="submenu">
+                    <a href="#">Integrantes</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Mariana</a></li>
+                        <li><a href="#">Froilan</a></li>
+                        <li><a href="#">Hugo</a></li>
+                        <li><a href="#">Alejandro</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#">Materia</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Base de datos</a></li>
+                        <li><a href="#">Matematicas</a></li>
+                        <li><a href="#">Español</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="juegos.html">Juegos</a>
+                    <ul class="dropdown">
+                        <li><a href="ajedrez.html">Ajedrez</a></li>
+                        <li><a href="domino.html">Domino</a></li>
+                        <li><a href="pokar.html">Pokar</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="proyectos.html">Proyectos</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Taxis locales</a></li>
+                        <li><a href="#">Psicología</a></li>
+                        <li><a href="#">Escolar</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 
         <main>
             <div class="breadcrumbs">
-                <a href="index.html">Inicio</a> > <span>Proyectos</span>
+                <a href="index.html">Inicio</a>
             </div>
-            <h2>Proyectos</h2>
-            <ul>
-                <li><a href="taxis_locales.html">Taxis Locales</a></li>
-                <li><a href="psicologia.html">Psicología</a></li>
-                <li><a href="escolar.html">Escolar</a></li>
-            </ul>
+            <h2>Bienvenido a la página de proyectos</h2>
+            <p>Esta es la página de juegos</p>
+            <p>Lista de juegos:</p>
+            <a href="ajedrez.html">Ajedrez</a>
+            <a href="domino.html">Domino</a>
+            <a href="pokar.html">Pokar</a>
         </main>
     </div>
 
     <footer>
         <p>© 2025 Mi Aplicación. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.submenu > a').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+                e.preventDefault();
+            });
+        });
+    </script>
 </body>
 </html>
