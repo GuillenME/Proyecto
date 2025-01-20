@@ -51,7 +51,7 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: 15px 25px;
-  color: white;
+  color: #F0F5F7;
   text-decoration: none;
   font-size: 16px;
   transition: background-color 0.3s ease;
@@ -199,4 +199,25 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.submenu .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  list-style: none;
+  z-index: 1000;
+}
+
+.submenu:hover .dropdown {
+  display: block;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+  display: block;
 }
