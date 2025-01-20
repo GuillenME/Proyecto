@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="   css/styles.css">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
@@ -14,15 +14,15 @@
     <div class="container">
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li class="submenu">
                     <a href="#">Integrantes</a>
                     <ul class="dropdown">
-                        <li><a href="integrantes/integrantes.html">Todos los integrantes</a></li>
-                        <li><a href="integrantes/mariana.html">Mariana</a></li>
-                        <li><a href="integrantes/froy.html">Froilan</a></li>
-                        <li><a href="integrantes/hugo.html">Hugo</a></li>
-                        <li><a href="integrantes/alejandro.html">Alejandro</a></li>
+                        <li><a href="integrantes.html">Todos los integrantes</a></li>
+                        <li><a href="mariana.html">Mariana</a></li>
+                        <li><a href="froy.html">Froilan</a></li>
+                        <li><a href="hugo.html">Hugo</a></li>
+                        <li><a href="alejandro.html">Alejandro</a></li>
                     </ul>
                 </li>
                 <li class="submenu">
@@ -52,28 +52,32 @@
             </ul>
         </nav>
 
-
         <main>
             <div class="breadcrumbs">
-                <a href="index.html">Inicio</a>
+                <a href="../index.html">Inicio</a> > <a href="integrantes.html">Integrantes</a> > <a href="#">Mariana</a> 
             </div>
-            <h2>Bienvenido a la Página de Inicio</h2>
-            <p>Esta es la página principal de tu aplicación. Desde aquí puedes explorar diversas categorías como la tienda o productos electrónicos.</p>
+            <div class="profile">
+                <img src="../assets/img/team/1.jpg" alt="Foto de Mariana" class="profile-image">
+                <div class="profile-info">
+                    <h2>Mariana</h2>
+                    <p>Estudiante de desarrollo y gestión de software.</p>
+                    <button><a href="mariana2.html">Más sobre mí</a></button>
+                </div>
+            </div>
         </main>
     </div>
 
     <footer>
-        <p>© 2025 Mi Aplicación. Todos los derechos reservados.</p>
+        <p>© 2025 Mi Aplicación. Todos los derechos reservados.</p> 
     </footer>
-
-    <script>
-        document.querySelectorAll('.submenu > a').forEach(item => {
-            item.addEventListener('click', (e) => {
-                const parent = item.parentElement;
-                parent.classList.toggle('active');
-                e.preventDefault();
-            });
-        });
-    </script>
 </body>
+<script>
+    document.querySelectorAll('.submenu > a').forEach(item => {
+        item.addEventListener('click', (e) => {
+            const parent = item.parentElement;
+            parent.classList.toggle('active');
+            e.preventDefault();
+        });
+    });
+</script>
 </html>
