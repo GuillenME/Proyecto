@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrantes</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
 </head>
 <body>
     <header>
@@ -15,23 +15,23 @@
     <div class="container">
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../../../index.html">Inicio</a></li>
                 <li class="submenu">
                     <a href="#">Integrantes</a>
                     <ul class="dropdown">
-                        <li><a href="integrantes.html">Todos los integrantes</a></li>
-                        <li><a href="mariana/principal.html">Mariana</a></li>
+                        <li><a href="../../integrantes.html">Todos los integrantes</a></li>
+                        <li><a href="../../mariana/principal.html">Mariana</a></li>
                         <li><a href="#">Froilan</a></li>
-                        <li><a href="hugo/principal.html">Hugo</a></li>
+                        <li><a href="../../hugo/principal.html">Hugo</a></li>
                         <li><a href="#">Alejandro</a></li>
                     </ul>
                 </li>
                 <li class="submenu">
                     <a href="#">Mariana</a>
                     <ul class="dropdown">
-                        <li><a href="mariana/materias/principal.html">Materias</a></li>
-                        <li><a href="mariana/juegos/principal.html">Juegos</a></li>
-                        <li><a href="mariana/proyectos/principal.html">Proyectos</a></li>
+                        <li><a href="../../mariana/materias/principal.html">Materias</a></li>
+                        <li><a href="../../mariana/juegos/principal.html">Juegos</a></li>
+                        <li><a href="../../mariana/proyectos/principal.html">Proyectos</a></li>
                     </ul>
                 </li>
                 <li class="submenu">
@@ -44,9 +44,9 @@
                 </li><li class="submenu">
                     <a href="#">Hugo</a>
                     <ul class="dropdown">
-                        <li><a href="hugo/materias/principal.html">Materias</a></li>
-                        <li><a href="hugo/juegos/principal.html">Juegos</a></li>
-                        <li><a href="hugo/proyectos/principal.html">Proyectos</a></li>
+                        <li><a href="principal.html">Materias</a></li>
+                        <li><a href="../juegos/principal.html">Juegos</a></li>
+                        <li><a href="../proyectos/principal.html">Proyectos</a></li>
                     </ul>
                 </li><li class="submenu">
                     <a href="#">Alex</a>
@@ -58,38 +58,36 @@
                 </li>         
         </nav>
 
-
         <main>
             <div class="breadcrumbs">
-                <a href="../index.html">Inicio</a> > Integrantes
+                <a href="../../../index.html">Inicio</a> > <a href="../../integrantes.html">Integrantes</a> > <a href="../principal.html">Hugo</a> > <a href="principal.html">Materias</a> > Experiencia de usuarios
             </div>
-            <h2>Integrantes del equipo</h2>
-            <p>Bienvenido a la vista de integrantes. Selecciona un integrante del equipo para explorar.</p> <br>
-            <button><a href="mariana/principal.html">Mariana</a></button><br><br>
-            <button><a href="#">Froilan</a></button><br><br>
-            <button><a href="hugo/principal.html">Hugo</a></button><br><br>
-            <button><a href="#">Alejandro</a></button>
+            <h2>Descripcion Experiencia de usuarios</h2>
+        <p>La metodología de programación es el enfoque teórico - práctico que hace posible encontrar soluciones a problemas complejos partiendo del análisis y apoyándose en la planificación. Este planteamiento hace posible maximizar la eficiencia del desarrollo del software al ganar en visibilidad y control.
+
+        </p>
         </main>
     </div>
 
     <footer>
-        <p>© 2025 Aplicación clases. Todos los derechos reservados.</p> 
+        <p>© 2025 Aplicación clases. Todos los derechos reservados.</p>
     </footer>
-</body>
-<script>
-    document.querySelectorAll('.submenu > a').forEach(item => {
-        item.addEventListener('click', (e) => {
-            const parent = item.parentElement;
-            parent.classList.toggle('active');
-            e.preventDefault();
-        });
-    });
 
-    const menuToggle = document.querySelector('.menu-toggle');
+    <script>
+        document.querySelectorAll('.submenu > a').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+                e.preventDefault();
+            });
+        });
+
+        const menuToggle = document.querySelector('.menu-toggle');
         const nav = document.querySelector('nav');
 
         menuToggle.addEventListener('click', () => {
             nav.classList.toggle('active');
         });
-</script>
+    </script>
+</body>
 </html>

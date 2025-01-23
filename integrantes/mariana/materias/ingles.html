@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aplicación clases</h1>
+    </header>
+
+    <div class="container">
+        
+
+        <main>
+            <div class="breadcrumbs">
+                <a href="../index.html">Inicio</a> > <a href="integrantes.html">Integrantes</a> > <a href="../principal.html">Mariana</a> > <a href="principal.html">Materias</a> > Inglés
+            </div>
+            <h2>Descripcion Inglés</h2>
+        <p>El objetivo principal de la enseñanza del inglés es desarrollar las cuatro habilidades comunicativas (Reading, writing, listening, speaking) por medio de las competencias básicas (lingüística, pragmática, sociolingüística) y haciendo uso de las TIC en el proceso de enseñanza aprendizaje reconociendo que en la actualidad es un medio de aprendizaje en los estudiantes de esta manera se está  promoviendo la formación y transformación personal y social.
+            Las actividades desarrolladas para el aprendizaje de la lengua inglesa, como idioma extranjero en la formación de adultos, se centran principalmente en el estudio de verbos, la transmisión de reglas gramaticales, la adquisición de vocabulario y en pequeñas traducciones, utilizando la lengua oficial como vehicular.
+
+        </p>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2025 Aplicación clases. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.submenu > a').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="   css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Mi Aplicación</h1>
+        <h1>Aplicación clases</h1>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
     </header>
 
     <div class="container">
@@ -19,38 +22,44 @@
                     <a href="#">Integrantes</a>
                     <ul class="dropdown">
                         <li><a href="integrantes/integrantes.html">Todos los integrantes</a></li>
-                        <li><a href="integrantes/mariana.html">Mariana</a></li>
+                        <li><a href="./integrantes/mariana/principal.html">Mariana</a></li>
                         <li><a href="integrantes/froy.html">Froilan</a></li>
                         <li><a href="integrantes/hugo.html">Hugo</a></li>
                         <li><a href="integrantes/alejandro.html">Alejandro</a></li>
                     </ul>
                 </li>
                 <li class="submenu">
-                    <a href="#">Materia</a>
+                    <a href="#">Mariana</a>
                     <ul class="dropdown">
-                        <li><a href="#">Base de datos</a></li>
-                        <li><a href="#">Matematicas</a></li>
-                        <li><a href="#">Español</a></li>
+                        <li><a href="./integrantes/mariana/materias/principal.html">Materias</a></li>
+                        <li><a href="./integrantes/mariana/juegos/principal.html">Juegos</a></li>
+                        <li><a href="./integrantes/mariana/proyectos/principal.html">Proyectos</a></li>
                     </ul>
                 </li>
                 <li class="submenu">
-                    <a href="juegos.html">Juegos</a>
+                    <a href="#">Froilan</a>
                     <ul class="dropdown">
-                        <li><a href="juegos.html">Todos los juegos</a></li>
-                        <li><a href="ajedrez.html">Ajedrez</a></li>
-                        <li><a href="domino.html">Domino</a></li>
-                        <li><a href="pokar.html">Pokar</a></li>
+                        <li><a href="#">Materias</a></li>
+                        <li><a href="#">Juegos</a></li>
+                        <li><a href="#">Proyectos</a></li>
                     </ul>
                 </li>
                 <li class="submenu">
-                    <a href="#">Proyectos</a>
+                    <a href="#">Hugo</a>
                     <ul class="dropdown">
-                        <li><a href="#">Taxis locales</a></li>
-                        <li><a href="#">Psicología</a></li>
-                        <li><a href="#">Escolar</a></li>
+                        <li><a href="integrantes/hugo/materias/principal.html">Materias</a></li>
+                        <li><a href="integrantes/hugo/juegos/principal.html">Juegos</a></li>
+                        <li><a href="integrantes/hugo/proyectos/principal.html">Proyectos</a></li>
                     </ul>
                 </li>
-            </ul>
+                <li class="submenu">
+                    <a href="#">Alex</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Materias</a></li>
+                        <li><a href="#">Juegos</a></li>
+                        <li><a href="#">Proyectos</a></li>
+                    </ul>
+                </li>
         </nav>
 
 
@@ -59,12 +68,13 @@
                 <a href="index.html">Inicio</a>
             </div>
             <h2>Bienvenido a la Página de Inicio</h2>
-            <p>Esta es la página principal de tu aplicación. Desde aquí puedes explorar diversas categorías como la tienda o productos electrónicos.</p>
+            <p>Esta es la página principal de tu aplicación. Desde aquí puedes explorar diversas categorías como la
+                Integrantes o productos electrónicos.</p>
         </main>
     </div>
 
     <footer>
-        <p>© 2025 Mi Aplicación. Todos los derechos reservados.</p>
+        <p>© 2025 Aplicación clases. Todos los derechos reservados.</p>
     </footer>
 
     <script>
@@ -75,6 +85,14 @@
                 e.preventDefault();
             });
         });
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
     </script>
 </body>
+
 </html>

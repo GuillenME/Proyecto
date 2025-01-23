@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aplicación clases</h1>
+    </header>
+
+    <div class="container">
+        
+
+        <main>
+            <div class="breadcrumbs">
+                <a href="../index.html">Inicio</a> > <a href="integrantes.html">Integrantes</a> > <a href="../principal.html">Mariana</a> > <a href="principal.html">Materias</a> > Español
+            </div>
+            <h2>Descripcion Español</h2>
+        <p>Español, como materia académica es el conocimiento de la lengua española en forma oral y escrita para que el alumno maneje el vocabulario, la sintaxis (forma en que se conjugan las palabras) y la gramática (estudio de las reglas y principios que regulan el uso de las lenguas y la organización de las palabras dentro de una oración).
+
+                Dentro de estas grandes partes encontramos:
+                La ortografía y las diferentes conjugaciones de los verbos, adverbios, los pronombres personales, adjetivos, sinónimos, antonimos, etc.
+                Haciendo referencia a la lengua española o castellano, es una lengua romance del grupo iberico. Es uno de los seis idiomas oficiales de la ONU.</p>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2025 Aplicación clases. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.submenu > a').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+</html>
