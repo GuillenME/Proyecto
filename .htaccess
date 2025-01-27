@@ -1,0 +1,8 @@
+# Redirigir errores 500 a la página personalizada
+ErrorDocument 500 /proyectos_web/proyecto_dwp_v1/proyecto/error.html
+
+# Generar error 500 solo en 'pagina1.html' y 'pagina2.html'
+RewriteEngine On
+
+# Error 500 solo para 'pagina1.html'
+RewriteRule ^pagina1\.html$ - [R=500]
